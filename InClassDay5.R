@@ -40,19 +40,28 @@ area <- pi*radius^2
 # Use a relationship operator to do this  (don't just set it to "TRUE")
 # Think: how do you check if it's larger than 10? Assign that to your new variable name. 
 
-if area > 100, then too_big = TRUE
+if(area > 100) {
+  too_big = TRUE
+} else {
+  too_big = FALSE
+}
 
 # Display the variable `my_name`
 # Display the variable `area` 
 # Display the variable `too_big`
 
+print(my_name)
+
+print(area)
+
+print(too_big)
 
 ### PART TWO ###
 
 # Create a variable `name_length` that holds how many letters (including spaces)
 # are in your name, using the variable you made above. (use the `nchar()` function)
 
-name_length <- nchar("Jorge Alejandro")
+name_length <- nchar(my_name)
 
 # Print the number of letters in your name
 
